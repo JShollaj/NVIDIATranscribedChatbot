@@ -1,0 +1,23 @@
+Folder PATH listing for volume OS
+Volume serial number is AA24-909C
+C:\USERS\XHONI\ONEDRIVE\DESKTOP\CHATBOT
+|   .gitignore
+|   Dockerfile
+|   Extract_Transcription_Details_Sample.py
+|   Get_Video_Id_Sample.py
+|   NVIDIA_Chatbot.py
+|   output.txt
+|   README.md
+|   requirements.txt
+|   
++---.streamlit
+|       secrets.toml
+|       
++---Data
+|       NVIDIA.txt
+|       
+\---Documentation
+        Answer.png
+        Chat GPT 4 Screenshot.png
+        NVIDIA Channels.png
+        

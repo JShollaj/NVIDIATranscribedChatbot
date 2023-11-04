@@ -15,9 +15,17 @@ st.image(
     use_column_width=True
 )
 
+green_text = "<span style='color:green;'>Summarize the following 'Accelerate AI-Powered Drug Discovery With NVIDIA BioNeMo'</span>"
 
 if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "Hello there! Feel free to ask me questions about specific NVIDIA videos. Can start with the given: Summarize the following 'Accelerate AI-Powered Drug Discovery With NVIDIA BioNeMo'"}]
+    st.session_state.messages = [{
+        "role": "assistant",
+        "content": (
+            "Hello there! Feel free to ask me questions about specific NVIDIA videos. "
+            "Can start with the given: "
+            + green_text
+        )
+    }]
 
 @st.cache_resource(show_spinner=False)
 def load_data():
@@ -37,6 +45,7 @@ def load_data():
     except Exception as e:
         st.error(f"An error occurred: {e}")
 
+
 index = load_data()
 chat_engine = index.as_chat_engine(chat_mode="condense_question", verbose=False)
 
@@ -45,7 +54,10 @@ if prompt := st.chat_input("Your question"):
 
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
-        st.write(message["content"])
+        if green_text in message["content"]:
+            st.markdown(message["content"].replace(green_text, f"<span style='color:green;'>{green_text}</span>"), unsafe_allow_html=True)
+        else:
+            st.write(message["content"])
 
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):

@@ -2,6 +2,3 @@ streamlit
 openai
 llama-index
 nltk
-youtube_transcript_api
-pytube
-google-api-python-client
