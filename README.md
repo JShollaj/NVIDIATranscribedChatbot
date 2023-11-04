@@ -12,4 +12,13 @@ Currently the premium extension of ChatGPT (GPT4 + Bing Search extension) has is
 
 ![Alt text](<Documentation/Chat GPT 4 Screenshot.png>)
 
-To save time to the user from watching 
+While some of the videos, have corresponding documentation or news - less obscure ones cannot be accessed / or provide an accurate summary.
+
+To save time to the user from wasting unecessary time, we have built a chat interface which automatically provides summary for available youtube videos (in this case from the NVIDIA channel).
+
+---
+
+## Solution Overview
+
+
+
