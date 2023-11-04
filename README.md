@@ -26,4 +26,10 @@ Then we will utilize LlamaIndex for a RAG based LLM with access to the retrieved
 
 After we are satisfied with the solution, we rewrite the code and extend streamlit as the front end chat interface for the user.
 
-Finally, we deploy the application for wide use, while 
+Finally, we deploy the application for wide use, while keeping in mind things we can change for different use cases or scaling the application.
+
+---
+
+## Deep Dive in Architecture
+
+

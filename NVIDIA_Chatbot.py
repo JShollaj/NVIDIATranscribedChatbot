@@ -15,7 +15,7 @@ st.image(
 
 
 if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "Ask me questions about specific NVIDIA videos. E.g summarize the following: Accelerate AI-Powered Drug Discovery With NVIDIA BioNeMo"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Hello there! Feel free to ask me questions about specific NVIDIA videos. Can start with the given: Summarize the following 'Accelerate AI-Powered Drug Discovery With NVIDIA BioNeMo'"}]
 
 @st.cache_resource(show_spinner=False)
 def load_data():
