@@ -27,7 +27,7 @@ def load_data():
                 llm=OpenAI(
                     model="gpt-3.5-turbo",
                     temperature=0.2,
-                    system_prompt="..."
+                    system_prompt="Provide accurate and concise summary for requested videos and transcripts."
                 )
             )
             index = VectorStoreIndex.from_documents(docs, service_context=service_context)
