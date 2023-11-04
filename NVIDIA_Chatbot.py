@@ -4,12 +4,14 @@ from llama_index.llms import OpenAI
 import openai
 from llama_index import SimpleDirectoryReader
 
+# Extract Key
 openai.api_key = st.secrets.openai_key
+
 st.header("Extract Information From NVIDIA Videos")
 
 # Display the background image
 st.image(
-    "https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/logo-and-brand/01-nvidia-logo-horiz-500x200-2c50-p@2x.png",
+    "https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/logo-and-brand/02-nvidia-logo-color-blk-500x200-4c25-p.png",
     use_column_width=True
 )
 
