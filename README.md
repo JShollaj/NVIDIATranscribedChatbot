@@ -6,7 +6,7 @@ Guide showing how to build a chatbot which extracts the content of any video on 
 
 ---
 
-## Issues With GPT4 + Bing (and Other LLMs)
+## Issues With GPT4 + Bing (and Other LLM)
 
 Currently the premium extension of ChatGPT (GPT4 + Bing Search extension) has issues with retrieving information on video content from YouTube or other similar platforms.
 
