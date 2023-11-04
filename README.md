@@ -18,7 +18,12 @@ To save time to the user from wasting unecessary time, we have built a chat inte
 
 ---
 
-## Solution Overview
+## High Level Solution Overview and Description
 
+In order to solve this issue, we will try to extract the transcript and text from all videos related to NVIDIA channels and then collide the files to a single text document for faster access to the LLM.
 
+Then we will utilize LlamaIndex for a RAG based LLM with access to the retrieved files. After some preprocessing and testing, we review the answers and if they correspond to the extracted text.
 
+After we are satisfied with the solution, we rewrite the code and extend streamlit as the front end chat interface for the user.
+
+Finally, we deploy the application for wide use, while 
