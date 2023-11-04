@@ -4,7 +4,7 @@ from llama_index.llms import OpenAI
 import openai
 from llama_index import SimpleDirectoryReader
 
-# Extract Keys
+# Extract Key
 openai.api_key = st.secrets.openai_key
 
 st.header("Extract Information From NVIDIA Videos")
