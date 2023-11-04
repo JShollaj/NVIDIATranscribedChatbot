@@ -32,4 +32,46 @@ Finally, we deploy the application for wide use, while keeping in mind things we
 
 ## Deep Dive in Architecture
 
+![Obtaining Data](<Documentation/Getting the Data.png>)
 
+![RAG for LLAMA](Documentation/RAG.png)
+
+
+---
+
+## Other Considerations
+
+- VectorDB Choice (Guide)
+
+- LLM Choice
+
+- Front End
+
+- Deployment
+
+- GPU Considerations
+
+---
+
+## List of Resources
+
+
+https://community.aws/tutorials/fullstack-llm-langchain-chatbot-on-aws
+
+https://www.mlexpert.io/prompt-engineering/chatbot-with-local-llm-using-langchain
+
+https://www.youtube.com/watch?v=x5SYNpfK4H0
+
+https://www.youtube.com/watch?v=o1BCq1KJULM
+
+https://blog.epsilla.com/build-a-chatbot-that-runs-purely-on-your-local-machine-using-llama-2-epsilla-langchain-a5053b16f85
+
+https://medium.com/predict/crafting-an-ai-powered-chatbot-for-finance-using-rag-langchain-and-streamlit-4384a8076960
+
+https://www.reddit.com/r/LocalLLaMA/comments/17hs77a/how_to_build_chatbot_that_knows_your_companys/
+
+https://python.langchain.com/docs/use_cases/question_answering/local_retrieval_qa
+
+https://www.youtube.com/watch?v=J8TgKxomS2g&t=290s
+
+https://youtube.com/playlist?list=PLVEEucA9MYhMkc4HvgHw-TvycgoMhADOI&si=hyd64IhalJnv8XJv
