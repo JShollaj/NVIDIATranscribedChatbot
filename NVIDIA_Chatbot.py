@@ -5,7 +5,7 @@ import openai
 from llama_index import SimpleDirectoryReader
 
 openai.api_key = st.secrets.openai_key
-st.header("Chat With NVIDIA Videos")
+st.header("Extract Information From NVIDIA Videos")
 
 # Display the background image
 st.image(
@@ -15,7 +15,7 @@ st.image(
 
 
 if "messages" not in st.session_state.keys():
-    st.session_state.messages = [{"role": "assistant", "content": "Ask me about NVIDIA Videos!"}]
+    st.session_state.messages = [{"role": "assistant", "content": "Ask me questions about specific NVIDIA videos. E.g summarize the following: Accelerate AI-Powered Drug Discovery With NVIDIA BioNeMo"}]
 
 @st.cache_resource(show_spinner=False)
 def load_data():
