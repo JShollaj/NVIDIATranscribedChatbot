@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN mkdir -p /root/.streamlit
 COPY .streamlit/secrets.toml /root/.streamlit/secrets.toml
 
-# Copy the rest of the project files and the data directory into the container
+# Copy the rest of the project files and the data directory into container
 COPY . .
 COPY Data /app/data
 
